@@ -13,6 +13,11 @@ buttons.forEach(item =>{
             current+=value;
             display.textContent=current;
         }
-       
+         else if(action==="clear"){
+            current='';
+            previous='';
+            operator='';
+            display.textContent='0';
+        }
     })
 });
