@@ -23,5 +23,13 @@ buttons.forEach(item =>{
             current=current.slice(0,-1);
             display.textContent=current!=0?current:0;
         }
+        else if(action==='add'||action==='substract'||action==='mult'||action==='ddevide'){
+            if(current===''){
+                return;
+            }
+            previous=current;
+            current='';
+            operator=action;
+        }
     })
 });
