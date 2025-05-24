@@ -3,7 +3,18 @@
     padding:0px;
     margin:0px;
 }
+body{
+    height:100vh;
+}
 .calculator_container{
+  width:400px;
+  height:500px;
+  border:1px solid black;
+  border-radius:50px;
+  position:absolute;
+  top:60px;
+  left:400px;
+  display:grid;
 
 }
 .screen{
@@ -28,5 +39,5 @@
 
  }
  #equals{
-    
+
  }
