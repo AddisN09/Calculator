@@ -19,5 +19,9 @@ buttons.forEach(item =>{
             operator='';
             display.textContent='0';
         }
+        else if(action==='delete'){
+            current=current.slice(0,-1);
+            display.textContent=current!=0?current:0;
+        }
     })
 });
