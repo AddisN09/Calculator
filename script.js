@@ -9,6 +9,10 @@ buttons.forEach(item =>{
     item.addEventlistenr('click',()=>{
         const value=item.textContent;
         const action=item.dataset.action;
-    
+        if(!action){
+            current+=value;
+            display.textContent=current;
+        }
+       
     })
 });
